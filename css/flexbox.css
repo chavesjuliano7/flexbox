@@ -1,0 +1,181 @@
+.cabecalhoPrincipal .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav ul {
+	display: flex;
+	
+
+}
+
+.rodapePrincipal-patrocinadores .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 70%;
+	margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+	width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+	display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+	display: flex;
+	/*flex-direction: column;
+	flex-wrap: wrap;*/
+	flex-flow: column wrap;
+	height: 250px;
+}
+
+.conteudoPrincipal-cursos {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+	width: 23%;
+	margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+	margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+
+.videoSobre .container {
+	
+	display: flex;
+	
+
+}
+
+
+.videoSobre-sobre { 
+
+	display: flex;
+	flex-direction: column;
+	flex-grow: 2;
+	text-align: center;
+	
+	
+}
+
+.videoSobre-sobre-list{
+	flex-grow: 2;
+
+}
+.videoSobre-video { 
+	flex-grow: 1;
+	flex-shrink: 2;
+}
+
+
+
+
+/* mobile */
+
+@media(max-width: 768px) {
+
+	.cabecalhoPrincipal .container { 
+
+		flex-direction: column;
+	}
+
+	.cabecalhoPrincipal-nav ul { 
+		
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	.cabecalhoPrincipal-nav ul li {
+		width: 100%
+	}
+
+	.conteudoPrincipal-cursos li {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.rodapePrincipal-patrocinadores .container {
+		
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		
+	}
+
+
+	.rodapePrincipal-navMap-list { 
+		height: auto;
+	}
+
+	
+	.rodapePrincipal-patrocinadores .container {
+		
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+
+	.rodapePrincipal-patrocinadores .container img {
+		width: 80%;
+		
+	}
+	.rodapePrincipal-patrocinadores-list {
+		justify-content: space-around;
+		
+	}
+
+	.rodapePrincipal-patrocinadores-list {
+    margin: 0;
+    width: 100%;
+
+}
+
+	.rodapePrincipal-contatoForm {
+		width: 100%;
+	}
+
+	.rodapePrincipal-contatoForm-fieldset {
+		justify-content: center;
+	}
+	
+	.conteudoPrincipal-cursos-link {
+
+		margin: 1% 0;
+
+
+	}
+
+
+.videoSobre .container {
+	flex-direction: column;
+	
+
+	
+}
+
+.videoSobre-video {
+	margin: 0 auto;
+	padding-bottom: 10%;
+}
+
+
+}
